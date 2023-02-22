@@ -1,0 +1,6 @@
+<div>
+  <% if user_signed_in? %>
+    <%= link_to "Edit",edit_student_test_path(test.student,test) %>
+    <%= link_to 'Destroy',student_test_path(test.student,test), method: :delete , data: {turbo_confirm: :"are you sure?"}%>
+  <%end%>
+</div>
